@@ -1,6 +1,6 @@
 // style for the landing page
 .index-page .squares{
-  @include linear-gradient($info-states, $info);
+  background: linear-gradient(to left top, white, grey)
 }
 .register-page, .section.section-signup{
   .squares, .square {
