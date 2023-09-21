@@ -64,12 +64,12 @@ export default function Footer() {
           <Col md="3">
             <Nav>
               <NavItem>
-                <NavLink href="https://creative-tim.com/contact-us?ref=blkdsr-footer">
+                <NavLink href="https://forms.gle/UuCRk6xRXMedVURq9">
                   Contact Us
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://creative-tim.com/about-us?ref=blkdsr-footer">
+                <NavLink to="/about-us" tag={Link}>
                   About Us
                 </NavLink>
               </NavItem>
