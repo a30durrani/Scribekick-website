@@ -105,7 +105,7 @@ export default function IndexNavbar() {
             <Row>
               <Col className="collapse-brand" xs="6">
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                  BLK•React
+                  ScribeKick
                 </a>
               </Col>
               <Col className="collapse-close text-right" xs="6">
@@ -133,9 +133,9 @@ export default function IndexNavbar() {
                 Explore
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
-                <DropdownItem tag={Link} to="/register-page">
-                  <i className="tim-icons icon-bullet-list-67" />
-                  Register Page
+                <DropdownItem tag={Link} to="/privacy-policy">
+                  <i className="tim-icons icon-lock-circle" />
+                  Privacy Policy
                 </DropdownItem>
                 <DropdownItem tag={Link} to="/about-us">
                   <i className="tim-icons icon-image-02" />
