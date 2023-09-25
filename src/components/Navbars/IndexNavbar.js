@@ -130,20 +130,16 @@ export default function IndexNavbar() {
                 onClick={(e) => e.preventDefault()}
               >
                 <i className="fa fa-cogs d-lg-none d-xl-none" />
-                Getting started
+                Explore
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
                 <DropdownItem tag={Link} to="/register-page">
                   <i className="tim-icons icon-bullet-list-67" />
                   Register Page
                 </DropdownItem>
-                <DropdownItem tag={Link} to="/landing-page">
+                <DropdownItem tag={Link} to="/about-us">
                   <i className="tim-icons icon-image-02" />
-                  Landing Page
-                </DropdownItem>
-                <DropdownItem tag={Link} to="/profile-page">
-                  <i className="tim-icons icon-single-02" />
-                  Profile Page
+                  About Us
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
@@ -162,6 +158,7 @@ export default function IndexNavbar() {
                 className="nav-link d-none d-lg-block"
                 color="default"
                 onClick={scrollToDownload}
+                href="https://forms.gle/UuCRk6xRXMedVURq9"
               >
                 <i className="tim-icons icon-email-85" /> Contact Us
               </Button>

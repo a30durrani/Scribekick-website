@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "components/Footer/Footer";
-import { Container, Row } from "reactstrap";
+import IndexNavbar from "components/Navbars/IndexNavbar";
+import { Container, Row, Button, Col } from "reactstrap";
 
 export default function AboutUs() {
     React.useEffect(() => {
@@ -12,7 +13,8 @@ export default function AboutUs() {
       }, []);
   return (
     <>
-    <div className="wrapper">
+    <IndexNavbar class="mb-0" />
+    <div className="wrapper" style={{marginTop:'50px'}}>
         <div>
           <div className="content-center">
           <Container class="mb-10">
@@ -110,6 +112,31 @@ export default function AboutUs() {
           </Container>
           </div>
         </div>
+        <section>
+        <div className="content-center text-center">
+            <Row className="row-grid justify-content-between align-items-center">
+            <Col>
+                <h1 className="text-white">
+                  Less Writing. <br />
+                  <span className="text-white">More Living.</span>
+                </h1>
+                <div className="btn-wrapper mb-3">
+                  <p className="category text-success d-inline">
+                    Get started today
+                  </p>
+                  <Button
+                    className="btn-link"
+                    color="success"
+                    href="/register-page"
+                    size="sm"
+                  >
+                    <i className="tim-icons icon-minimal-right" />
+                  </Button>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </section>
        </div>
       <Footer/>
     </>
