@@ -1,7 +1,6 @@
 import React from "react";
 import Footer from "components/Footer/Footer";
 import IndexNavbar from "components/Navbars/IndexNavbar";
-import { Container, Row, Button, Col } from "reactstrap";
 
 const PrivacyPolicy = () => {
     React.useEffect(() => {
