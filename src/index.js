@@ -28,7 +28,7 @@ import LandingPage from "views/examples/LandingPage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import AboutUs from "views/examples/AboutUs";
-
+import PrivacyPolicy from "views/examples/PrivacyPolicy";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(

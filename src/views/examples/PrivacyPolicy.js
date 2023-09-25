@@ -3,7 +3,7 @@ import Footer from "components/Footer/Footer";
 import IndexNavbar from "components/Navbars/IndexNavbar";
 import { Container, Row, Button, Col } from "reactstrap";
 
-export const PrivacyPolicy = () => {
+const PrivacyPolicy = () => {
     React.useEffect(() => {
         document.body.classList.toggle("privacy-policy");
         // Specify how to clean up after this effect:
@@ -81,6 +81,8 @@ export const PrivacyPolicy = () => {
     </>
     );
 };
+
+export default PrivacyPolicy;
   // Uncomment the below line if you are using this component in a React app.
   // export default PrivacyPolicy;
   
