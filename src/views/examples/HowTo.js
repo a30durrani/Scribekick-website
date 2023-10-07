@@ -47,6 +47,7 @@ const HowTo = () => {
                                         <li>Click Launch EVA (note: if your file explorer pops up again, do NOT upload another file. This is another bug we're addressing).</li>
                                         <li>Wait for EVA to finish processing.</li>
                                         <li>Your output will appear in the text boxes below the form.</li>
+                                        <h4><span style={{ fontWeight: 'bold', textDecoration: 'underline'}}>Note: The AI-generated SOAP note and Insights should be used as SUGGESTIONS to help with notes and not a final end all be all copy</span></h4>
                                     </ol>
                                 </blockquote>
                             </div>
