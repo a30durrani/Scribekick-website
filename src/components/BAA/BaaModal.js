@@ -19,7 +19,7 @@ const BaaModal = () => {
                     <div className="col-12">
                         <blockquote className="blockquote">
                             <h1>Business Associate Agreement (BAA)</h1>
-                            <p>This Business Associate Agreement ("Agreement") is entered into by and between ScribeKick, a Delaware C Corporation with its principal office located at 612 Morris Street, Albany, NY ("Business Associate") and the user of the ScribeKick EVA ("Covered Entity").</p>
+                            <p>This Business Associate Agreement ("Agreement") is entered into by and between ScribeKick, a Delaware C Corporation with its registered agent located at 651 N. BROAD ST. SUITE 201, MIDDLETOWN, DE 19709 ("Business Associate") and the user of the ScribeKick EVA ("Covered Entity").</p>
                             <h3>1. Definitions</h3>
                             <p>(a) "PHI" shall mean Protected Health Information, as defined in HIPAA, limited to the information created, received, maintained, or transmitted by Business Associate on behalf of Covered Entity.</p>
                             <p>(b) "HIPAA" shall mean the Health Insurance Portability and Accountability Act of 1996, Public Law 104-191.</p>
