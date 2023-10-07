@@ -43,7 +43,7 @@ export default function LandingPage() {
       <div className="wrapper">
         <div>
           <div className="content-center">
-          <Container class="mb-10">
+          <Container className="mb-10">
             <Row className="row-grid justify-content-between text-center">
                 <div className="px-md-5">
                   <hr className="line-success" />
@@ -53,7 +53,7 @@ export default function LandingPage() {
                     </span>
                     </h1>
                   <blockquote class="blockquote mb-5">
-                    <p class="mb-0">
+                    <p className="mb-0">
                       We're proud to introduce EVA, our first generation tool
                       that sets the groundwork for the future of documentation.
                       Using cutting edge machine learning models, EVA is able 
@@ -61,17 +61,17 @@ export default function LandingPage() {
                       and output the transcript right to a PDF along with a series of AI-powered 
                       insights. Simply record your session, upload it to EVA, and she handles the rest. 
                     </p>
-                    <p class="mb-0"></p>
+                    <p className="mb-0"></p>
                     <p></p>
-                    <p class="mb-0">
+                    <p className="mb-0">
                       Yup, it's that simple. Thanks EVA.
                     </p>
                     <p></p>
                     <div className="btn-wrapper mb-3">
                     <Button
                       type="button"
-                      class="btn btn-outline-success"
-                      href="/register-page"
+                      className="btn btn-outline-success"
+                      href="/EVA"
                       size="md"
                       >
                       <p className="text-success d-inline">
@@ -128,7 +128,7 @@ export default function LandingPage() {
                     Our Mission.
                     </span>
                     </h1>
-                  <blockquote class="blockquote mb-5">
+                  <blockquote className="blockquote mb-5">
                     <Row className="row-grid justify-content-center">
                       <Col lg="3">
                         <div className="info">
@@ -194,7 +194,7 @@ export default function LandingPage() {
                   <Button
                     className="btn-link"
                     color="success"
-                    href="/register-page"
+                    href="/EVA"
                     size="sm"
                   >
                     <i className="tim-icons icon-minimal-right" />

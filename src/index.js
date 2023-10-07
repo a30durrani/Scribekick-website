@@ -25,10 +25,10 @@ import "assets/demo/demo.css";
 
 import Index from "views/Index.js";
 import LandingPage from "views/examples/LandingPage.js";
-import RegisterPage from "views/examples/RegisterPage.js";
-import ProfilePage from "views/examples/ProfilePage.js";
 import AboutUs from "views/examples/AboutUs";
 import PrivacyPolicy from "views/examples/PrivacyPolicy";
+import App from "views/examples/App";
+import BaaModal from "components/BAA/BaaModal";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
@@ -36,10 +36,10 @@ root.render(
     <Routes>
       <Route path="/home" element={<Index />} />
       <Route path="/landing-page" element={<LandingPage />} />
-      <Route path="/register-page" element={<RegisterPage />} />
-      <Route path="/profile-page" element={<ProfilePage />} />
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="/EVA" element={<App />} />
+      <Route path="/ToS" element={<BaaModal />} />
       <Route path="*" element={<Navigate to="/home" replace />} />
     </Routes>
   </BrowserRouter>

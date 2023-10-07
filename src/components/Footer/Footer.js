@@ -57,6 +57,11 @@ export default function Footer() {
                   License
                 </NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink to="/ToS" tag={Link}>
+                  Terms of Service(BAA)
+                </NavLink>
+              </NavItem>
             </Nav>
           </Col>
         </Row>

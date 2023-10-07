@@ -29,7 +29,7 @@ const PrivacyPolicy = () => {
             <ul>
               <li>Personal Data</li>
               <li>Audio, Visual, and Text Data</li>
-              <li>Health Information</li>
+              <li>Patient Health Information (that may be revealed during therapy sessions)</li>
               <li>Usage Data</li>
             </ul>
 

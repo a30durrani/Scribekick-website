@@ -127,7 +127,7 @@ export default function AboutUs() {
                   <Button
                     className="btn-link"
                     color="success"
-                    href="/register-page"
+                    href="/EVA"
                     size="sm"
                   >
                     <i className="tim-icons icon-minimal-right" />
