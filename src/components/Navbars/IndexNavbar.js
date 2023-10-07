@@ -141,6 +141,10 @@ export default function IndexNavbar() {
                   <i className="tim-icons icon-image-02" />
                   About Us
                 </DropdownItem>
+                <DropdownItem tag={Link} to="/HowTo">
+                  <i className="tim-icons icon-settings" />
+                  How to Use EVA
+                </DropdownItem>
                 <DropdownItem tag={Link} to="/EVA">
                   <i className="tim-icons icon-molecule-40" />
                   Meet EVA

@@ -29,6 +29,7 @@ import AboutUs from "views/examples/AboutUs";
 import PrivacyPolicy from "views/examples/PrivacyPolicy";
 import App from "views/examples/App";
 import BaaModal from "components/BAA/BaaModal";
+import HowTo from "views/examples/HowTo";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
@@ -40,6 +41,7 @@ root.render(
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/EVA" element={<App />} />
       <Route path="/ToS" element={<BaaModal />} />
+      <Route path="/HowTo" element={<HowTo />} />
       <Route path="*" element={<Navigate to="/home" replace />} />
     </Routes>
   </BrowserRouter>
