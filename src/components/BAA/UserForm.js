@@ -70,9 +70,7 @@ function UserForm(props) {
         <div className="content-center">
             <Container className="mb-5">
                 <Row className="row-grid justify-content-center">
-                    <h1>Upload Audio for Transcription</h1>
-
-                    {errorMessage && <Alert color="danger">{errorMessage}</Alert>}  
+                    <h1>Upload Audio for Transcription</h1>  
 
                     <Form onSubmit={handleSubmit}>
                         <FormGroup>
@@ -95,8 +93,8 @@ function UserForm(props) {
                             </Label>
                         </FormGroup>
                         <FormGroup>
-                            <Button type="submit" disabled={isLoading} color="primary" className='button'>
-                                <Label for="audioFile">
+                            <Button type="submit" disabled={isLoading} color="primary" className='button' style={{ width: '100%' }}>
+                                <Label for="audioFile" style={{ display: 'block', width: '100%', cursor: 'pointer' }} >
                                         {isLoading ? "Uploading..." : (audioFile ? `Launch EVA` : "Upload")}
                                 </Label>
                             </Button>
@@ -112,18 +110,23 @@ function UserForm(props) {
                             {audioFile && <div>Selected file: {audioFile.name}</div>}  
                         </FormGroup>
                     </Form>
+                    {errorMessage && <Alert color="danger">{errorMessage}</Alert>}
                 </Row>
             </Container>  
+            {
+            transcription && insights ? (
                 <Row>
-                    <blockquote style={{ whiteSpace: 'pre-line' }} className='blockquote'>
-                        <h1>Transcript:</h1>
-                        <p>{transcription}</p>
-                    </blockquote>
-                    <blockquote style={{ whiteSpace: 'pre-line' }} className='blockquote'>
-                        <h1>AI-powered SOAP Note and Insights:</h1>
-                        <p>{insights}</p>
-                    </blockquote>
+                <blockquote style={{ whiteSpace: 'pre-line' }} className='blockquote'>
+                    <h1>Transcript:</h1>
+                    <p>{transcription}</p>
+                </blockquote>
+                <blockquote style={{ whiteSpace: 'pre-line' }} className='blockquote'>
+                    <h1>AI-powered SOAP Note and Insights:</h1>
+                    <p>{insights}</p>
+                </blockquote>
                 </Row>
+            ) : null
+            }
 
         </div>   
     );

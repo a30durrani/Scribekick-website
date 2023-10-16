@@ -53,13 +53,8 @@ export default function Footer() {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://opensource.org/licenses/MIT">
-                  License
-                </NavLink>
-              </NavItem>
-              <NavItem>
                 <NavLink to="/ToS" tag={Link}>
-                  Terms of Service(BAA)
+                  Terms of Service
                 </NavLink>
               </NavItem>
             </Nav>
