@@ -13,7 +13,7 @@ function UserForm(props) {
     const [transcription, setTranscription] = useState("");
     const [insights, setInsights] = useState("");
 
-    const allowedAudioTypes = ["audio/wav", "audio/mp3", "audio/mpeg", "audio/m4a"];
+    const allowedAudioTypes = ["audio/wav", "audio/mp3", "audio/mpeg", "audio/m4a", "video/mp4", "video/webm"];
 
     const handleSubmit = async (event) => {
         event.preventDefault();
