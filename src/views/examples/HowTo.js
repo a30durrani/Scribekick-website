@@ -43,7 +43,7 @@ const HowTo = () => {
                                     <ol>
                                         <li>Fill out First name, last name, and email.</li>
                                         <li>Check the box to consent to Terms and Conditions.</li>
-                                        <li>Click Upload (note: you must click the word "upload" on the button, we're still working out the kinks with this functionality).</li>
+                                        <li>Click Upload</li>
                                         <li>Click Launch EVA (note: if your file explorer pops up again, do NOT upload another file. This is another bug we're addressing).</li>
                                         <li>Wait for EVA to finish processing.</li>
                                         <li>Your output will appear in the text boxes below the form.</li>
