@@ -10,7 +10,7 @@ function UserForm(props) {
     const [isChecked, setIsChecked] = useState(false);  // Checkbox state
     const [isLoading, setIsLoading] = useState(false);
     const [errorMessage, setErrorMessage] = useState("");
-    const [transcription, setTranscription] = useState("");
+    // const [transcription, setTranscription] = useState("");
     const [insights, setInsights] = useState("");
 
     const allowedAudioTypes = ["audio/wav", "audio/mp3", "audio/mpeg", "audio/m4a", "video/mp4", "video/webm"];
@@ -46,9 +46,9 @@ function UserForm(props) {
             });
         
             // Extracting the file paths from the server's response
-            const { transcription, insights } = response.data;
+            const { /* transcription,  */insights } = response.data;
 
-            setTranscription(transcription);
+            // setTranscription(transcription);
             setInsights(insights);
         
             setIsLoading(false);
@@ -70,8 +70,13 @@ function UserForm(props) {
         <div className="content-center">
             <Container className="mb-5">
                 <Row className="row-grid justify-content-center">
-                    <h1>Upload Audio for Transcription</h1>  
-
+                    <h1 style={{
+                                marginTop: '2.5rem', 
+                                fontSize: '2.5rem', 
+                                fontWeight: 'bold', 
+                                color: '#FFFFFF', 
+                                textAlign: 'center', 
+                                }}>Upload Audio for Transcription</h1>  
                     <Form onSubmit={handleSubmit}>
                         <FormGroup>
                             <Label for="firstName">First Name:</Label>
@@ -114,12 +119,12 @@ function UserForm(props) {
                 </Row>
             </Container>  
             {
-            transcription && insights ? (
+           /*  transcription &&  */insights ? (
                 <Row>
-                <blockquote style={{ whiteSpace: 'pre-line' }} className='blockquote'>
+                {/* <blockquote style={{ whiteSpace: 'pre-line' }} className='blockquote'>
                     <h1>Transcript:</h1>
                     <p>{transcription}</p>
-                </blockquote>
+                </blockquote> */}
                 <blockquote style={{ whiteSpace: 'pre-line' }} className='blockquote'>
                     <h1>AI-powered SOAP Note and Insights:</h1>
                     <p>{insights}</p>
