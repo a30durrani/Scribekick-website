@@ -17,7 +17,7 @@ function App() {
                             <div className="col-12"></div>
                                 <blockquote className='blockquote'>
                                 <h3>Working on EMR Demo and raising money! Check back soon!</h3>
-                                <h3>Email ahmed@scribekick.me with any questions</h3>
+                                <h3>Email ahmed@scribekick.me with any questions!</h3>
                                </blockquote>
                             </div>
                         </div>
