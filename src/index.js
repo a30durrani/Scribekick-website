@@ -27,9 +27,10 @@ import Index from "views/Index.js";
 import LandingPage from "views/examples/LandingPage.js";
 import AboutUs from "views/examples/AboutUs";
 import PrivacyPolicy from "views/examples/PrivacyPolicy";
-import App from "views/examples/App";
+// import App from "views/examples/App";
 import BaaModal from "components/BAA/BaaModal";
 import HowTo from "views/examples/HowTo";
+import ErrorPage from "views/examples/ErrorPage";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
@@ -39,7 +40,7 @@ root.render(
       <Route path="/landing-page" element={<LandingPage />} />
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-      <Route path="/EVA" element={<App />} />
+      <Route path="/EVA" element={<ErrorPage />} />
       <Route path="/ToS" element={<BaaModal />} />
       <Route path="/HowTo" element={<HowTo />} />
       <Route path="*" element={<Navigate to="/home" replace />} />
